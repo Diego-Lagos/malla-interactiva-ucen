@@ -1,8 +1,4 @@
-¡Claro! Con base en los archivos de la aplicación de Malla Interactiva, puedo crear un archivo `README.md` completo para tu repositorio de GitHub.
-
-Este README incluirá una descripción del proyecto, sus características principales, la estructura de la malla de la carrera de Ingeniería Civil en Computación e Informática (ICCI) que está configurada, e instrucciones sobre cómo configurar el entorno local.
-
-##🌟 Malla Interactiva - ICCI 2018 🌟Visualiza, planifica y gestiona tu avance en el plan de estudios de la carrera de **Ingeniería Civil en Computación e Informática (ICCI)**, Plan 2018, de la Universidad Técnica Federico Santa María (USM).
+##🌟 Malla Interactiva - UCEN 🌟
 
 Esta aplicación web permite a los estudiantes interactuar con la malla curricular, marcando ramos aprobados, reprobados o pendientes, y obteniendo estadísticas de avance en tiempo real.
 
@@ -20,20 +16,6 @@ Esta aplicación web permite a los estudiantes interactuar con la malla curricul
 * **Carga y Descarga de Estado:** Permite exportar (`.json`) el estado de avance de la malla para compartir o hacer copias de seguridad.
 * **Descarga como Imagen:** Genera una imagen (JPG/PNG) de la malla actual, incluyendo un pie de página con estadísticas.
 * **Visualizador de Dependencias:** Al pasar el ratón sobre un ramo, resalta sus **prerrequisitos** (Rojo) y los ramos que **desbloquea** (Verde).
-
-###⚙️ Estructura de la Malla (ICCI 2018)La malla está organizada por categorías, las cuales tienen asignados colores específicos (definidos en `colors_ICCI_2018.json`):
-
-| Abreviatura | Color (HEX) | Descripción |
-| --- | --- | --- |
-| **CB** | `#FCC8AF` | Ciencias Básicas |
-| **CI** | `#F26431` | Ciencias de la Ingeniería |
-| **IAP** | `#B2B3B7` | Ingeniería Aplicada |
-| **CSH** | `#DCDDDF` | Ciencias Sociales y Humanidades |
-
-El plan de estudios (definido en `data_ICCI_2018.json`) tiene una duración nominal de **11 semestres**.
-
-* **Total de Créditos USM:** 310
-* **Total de Créditos SCT:** 517 (aproximadamente, conversión 5/3)
 
 ###🚀 Instalación y Uso LocalPara ejecutar la aplicación en tu máquina local, solo necesitas un servidor web simple, como el módulo `http.server` de Python.
 
@@ -56,9 +38,9 @@ http://localhost:8000
 ```
 
 
-Para ver la malla ICCI 2018 por defecto, puedes usar el siguiente enlace:
+Para ver la malla por defecto, puedes usar el siguiente enlace:
 ```
-http://localhost:8000/?m=ICCI_2018
+http://localhost:8000
 
 ```
 
