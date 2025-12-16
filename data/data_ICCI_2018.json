@@ -1,0 +1,149 @@
+{
+    "s1": [
+        ["INTRODUCCION A LAS MATEMATICAS", "CB-58000", 10, 6, "CB", [], "A"],
+        ["INTRODUCCION A LA FISICA", "CB-14700", 4, 6, "CB", [], "A"],
+        ["INTRODUCCION A LA INGENIERIA EN COMPUTACION E INFORMATICA", "CI-19076", 10, 4, "CI", [], "A"],
+        ["PROGRAMACION COMPUTACIONAL", "CI-14702", 8, 6, "CI", [], "A"],
+        ["ADMINISTRACION", "CI-4827", 8, 4, "CI", [], "A"],
+        ["ESTRATEGIAS DE APRENDIZAJE", "CSH-58001", 8, 4, "CSH", [], "A"]
+    ],
+    "s2": [
+        ["ALGEBRA I", "CB-3225", 6, 6, "CB", ["CB-58000"], "A"],
+        ["CALCULO I", "CB-3226", 8, 6, "CB", [], "A"],
+        ["MECANICA", "CB-14704", 12, 6, "CB", ["CB-14700"], "A"],
+        ["QUIMICA GENERAL", "CB-3267", 8, 6, "CB", [], "A"],
+        ["PROGRAMACION ORIENTADA A OBJETOS", "CI-19084", 8, 6, "CI", ["CI-14702"], "A"]
+    ],
+    "s3": [
+        ["ALGEBRA II", "CB-3230", 8, 6, "CB", ["CB-3225"], "A"],
+        ["CALCULO II", "CB-3231", 10, 6, "CB", ["CB-3226"], "A"],
+        ["ELECTRICIDAD Y MAGNETISMO", "CB-14703", 6, 6, "CB", ["CB-14704"], "A"],
+        ["SISTEMAS DIGITALES", "CI-3335", 10, 6, "CI", ["CI-19076"], "A"],
+        ["INGLES PARA INGENIERIA I", "CSH-3330", 4, 3, "CSH", [], "A"],
+        ["ESTRATEGIAS DE COMUNICACION", "CSH-14701", 6, 3, "CSH", [], "A"]
+    ],
+    "s4": [
+        ["ECUACIONES DIFERENCIALES", "CB-3333", 6, 6, "CB", ["CB-3231"], "A"],
+        ["CALCULO III", "CB-3327", 8, 6, "CB", ["CB-3231"], "A"],
+        ["ARQUITECTURA DE COMPUTADORES", "CI-3344", 6, 6, "CI", ["CI-3335"], "A"],
+        ["FUNDAMENTOS DE LENGUAJES DE PROGRAMACION", "CI-3329", 4, 4, "CI", ["CI-19076"], "A"],
+        ["INGLES PARA INGENIERIA II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], "A"],
+        ["CURSO TRANSVERSAL INSTITUCIONAL I", "CSH-50000", 2, 2, "CSH", [], "A"],
+        ["TALLER INTEGRADOR I", "CI-19085", 2, 3, "CI", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701"
+        ], "A"]
+    ],
+    "s5": [
+        ["ONDAS, OPTICA Y CALOR", "CB-3248", 12, 6, "CB", ["CB-14704"], "A"],
+        ["FUNDAMENTOS DE ECONOMIA", "CI-3334", 4, 4, "CI", ["CB-3225"], "A"],
+        ["TEORIA DE SISTEMAS", "CI-4835", 4, 4, "CI", ["CI-14702"], "A"],
+        ["SISTEMAS OPERATIVOS", "CI-3346", 6, 6, "CI", ["CI-3344"], "A"],
+        ["ESTRUCTURA DE DATOS", "CI-3328", 12, 7, "CI", ["CI-3329"], "A"],
+        ["INGLES COMUNICACIONAL", "CSH-3349", 4, 3, "CSH", ["CSH-3338"], "A"]
+    ],
+    "s6": [
+        ["PROBABILIDADES Y ESTADISTICA", "CB-3340", 10, 6, "CB", ["CB-3231"], "A"],
+        ["ANALISIS Y DISEÑO DE SISTEMAS DE INFORMACION", "CI-3341", 6, 6, "CI", ["CI-4835"], "A"],
+        ["REDES DE DATOS Y SISTEMAS DISTRIBUIDOS", "CI-19065", 10, 6, "CI", ["CB-3248"], "A"],
+        ["COMPLEJIDAD DE ALGORITMOS", "CI-19017", 6, 6, "CI", ["CI-3328"], "A"],
+        ["BASES DE DATOS", "CI-3347", 8, 6, "CI", ["CI-19085"], "A"]
+    ],
+    "s7": [
+        ["INVESTIGACION OPERATIVA I", "CI-58005", 6, 6, "CI", ["CB-3230"], "A"],
+        ["CONTABILIDAD Y COSTOS", "CI-4883", 10, 6, "CI", ["CB-3225"], "A"],
+        ["ARQUITECTURA DE SOFTWARE", "CI-19064", 6, 6, "CI", ["CI-3341"], "A"],
+        ["AUTOMATIZACION", "CI-19063", 8, 6, "CI", ["CI-3344"], "A"],
+        ["TOPICOS AVANZADOS DE DATOS", "CI-3355", 10, 6, "CI", ["CI-3347"], "A"],
+        ["PRACTICA OPERACIONAL", "CI-3352", 0, 11, "CI", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701",
+            "CB-3333", "CB-3327", "CI-3344", "CI-3329", "CSH-3338", "CSH-50000", "CI-19085",
+            "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
+            "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347"
+        ], "A"]
+    ],
+    "s8": [
+        ["SIMULACION", "CI-58011", 6, 6, "CI", ["CI-58005"], "A"],
+        ["INGENIERIA DE SOFTWARE", "IAP-3364", 10, 6, "IAP", ["CI-19064"], "A"],
+        ["INTELIGENCIA ARTIFICIAL", "IAP-19068", 8, 6, "IAP", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701",
+            "CB-3333", "CB-3327", "CI-3344", "CI-3329", "CSH-3338", "CSH-50000", "CI-19085",
+            "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
+            "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347"
+        ], "A"],
+        ["PROGRAMACION DE APLICACIONES", "CI-19086", 6, 7, "CI", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701",
+            "CB-3333", "CB-3327", "CI-3344", "CI-3329", "CSH-3338", "CSH-50000", "CI-19085",
+            "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
+            "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347"
+        ], "A"],
+        ["CURSO TRANSVERSAL INSTITUCIONAL II", "CSH-50001", 2, 2, "CSH", [], "A"],
+        ["TALLER INTEGRADOR II", "CI-19080", 2, 3, "CI", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701",
+            "CB-3333", "CB-3327", "CI-3344", "CI-3329", "CSH-3338", "CSH-50000", "CI-19085",
+            "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
+            "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347",
+            "CI-58005", "CI-4883", "CI-19064", "CI-19063", "CI-3355", "CI-3352"
+        ], "A"]
+    ],
+    "s9": [
+        ["INNOVACION Y EMPRENDIMIENTO", "CI-4858", 6, 4, "CI", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701",
+            "CB-3333", "CB-3327", "CI-3344", "CI-3329", "CSH-3338", "CSH-50000", "CI-19085",
+            "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
+            "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347"
+        ], "A"],
+        ["EVALUACION DE PROYECTOS", "CI-4847", 10, 6, "CI", ["CI-4883"], "A"],
+        ["GESTION DE CALIDAD DE SOFTWARE", "IAP-3783", 6, 7, "IAP", ["IAP-3364"], "A"],
+        ["SISTEMAS INTELIGENTES", "IAP-19081", 6, 7, "IAP", ["IAP-19068"], "A"],
+        ["ELECTIVO DE ESPECIALIZACION PROFESIONAL I", "IAP-3780", 10, 6, "IAP", ["CI-19080"], "A"],
+        ["PRACTICA PROFESIONAL", "CI-3785", 0, 0, "CI", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701",
+            "CB-3333", "CB-3327", "CI-3344", "CI-3329", "CSH-3338", "CSH-50000", "CI-19085",
+            "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
+            "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347",
+            "CI-58005", "CI-4883", "CI-19064", "CI-19063", "CI-3355", "CI-3352"
+        ], "A"]
+    ],
+    "s10": [
+        ["DIRECCION Y EVALUACION DE PROYECTOS INFORMATICOS", "IAP-19082", 6, 7, "IAP", ["CI-4847"], "A"],
+        ["SEGURIDAD INFORMATICA", "IAP-19008", 12, 7, "IAP", ["CI-19065"], "A"],
+        ["ELECTIVO DE ESPECIALIZACION PROFESIONAL II", "IAP-3782", 6, 6, "IAP", ["CI-19080"], "A"],
+        ["PROYECTO DE TITULO I", "IAP-19537", 12, 7, "IAP", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701",
+            "CB-3333", "CB-3327", "CI-3344", "CI-3329", "CSH-3338", "CSH-50000", "CI-19085",
+            "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
+            "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347",
+            "CI-58005", "CI-4883", "CI-19064", "CI-19063", "CI-3355", "CI-3352"
+        ], "A"],
+        ["ETICA Y MORAL PROFESIONAL", "CSH-19071", 4, 3, "CSH", ["CI-19080"], "A"]
+    ],
+    "s11": [
+        ["PLANIFICACION ESTRATEGICA", "CI-4856", 4, 6, "CI", [
+            "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
+            "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
+            "CB-3230", "CB-3231", "CB-14703", "CI-3335", "CSH-3330", "CSH-14701",
+            "CB-3333", "CB-3327", "CI-3344", "CI-3329", "CSH-3338", "CSH-50000", "CI-19085",
+            "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
+            "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347"
+        ], "A"],
+        ["ELECTIVO DE ESPECIALIZACION PROFESIONAL III", "IAP-3787", 10, 6, "IAP", ["CI-19080"], "A"],
+        ["MINERIA DE DATOS", "IAP-19083", 10, 5, "IAP", ["CI-3355"], "A"],
+        ["PROYECTO DE TITULO II", "IAP-19541", 24, 13, "IAP", ["IAP-19537"], "A"]
+    ]
+}
