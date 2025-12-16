@@ -12,7 +12,9 @@ Es especialmente útil para:
 * Conocer el porcentaje de avance de la carrera (créditos y asignaturas).
 * Visualizar fácilmente las dependencias (prerrequisitos y ramos que desbloquea) al pasar el ratón sobre una asignatura.
 
-> **⚠️ Aviso Importante:** Esta herramienta es **meramente ilustrativa**. Siempre debes usar la información oficial de tu universidad para la toma de ramos.## ⚙️ Como instalar y ejecutar
+> **⚠️ Aviso Importante:** Esta herramienta es **meramente ilustrativa**. Siempre debes usar la información oficial de tu universidad para la toma de ramos.
+
+## ⚙️ Como instalar y ejecutar
 
 El proyecto está diseñado para funcionar como una aplicación web estática, por lo que su instalación y ejecución son muy sencillas, solo requiere un servidor web local (como Python).
 
@@ -35,7 +37,9 @@ El proyecto está diseñado para funcionar como una aplicación web estática, p
     http://localhost:8000
     ```
 
-    *El archivo `RUN.BAT` incluido en el repositorio automatiza estos pasos para entornos Windows. Simplemente haz doble clic para iniciar el servidor y abrir el navegador (utiliza Microsoft Edge por defecto, aunque puede ser editado).*## 💡 Funcionamiento
+    *El archivo `RUN.BAT` incluido en el repositorio automatiza estos pasos para entornos Windows. Simplemente haz doble clic para iniciar el servidor y abrir el navegador (utiliza Microsoft Edge por defecto, aunque puede ser editado).*
+
+## 💡 Funcionamiento
 
 ### Interacción Básica
 
@@ -67,18 +71,15 @@ Al pasar el ratón sobre cualquier asignatura (ramo):
 * **Limpiar aprobados:** El botón "Limpiar aprobados" (`#cleanApprovedButton`) resetea el estado de **TODAS** las asignaturas (aprobadas, reprobadas y en curso) y el contador de créditos.
 * **Cargar Malla:** El botón "Cargar Malla" (`#loadfile`) permite cargar un archivo de estado o una nueva malla completa (`.json`).
 * **Descargar Estado:** El botón "Descargar Estado" (`#downloadStateButton`) guarda tu progreso actual (listas de aprobados, reprobados y en curso) en un archivo JSON para que puedas restaurarlo más tarde.
-* **Descargar Imagen:** El botón "Descargar Imagen" (`#downloadImageButton`) exporta la malla completa como un archivo PNG o JPG, incluyendo un pie de página con información de la carrera y tu estado de avance.## ✨ Extras
+* **Descargar Imagen:** El botón "Descargar Imagen" (`#downloadImageButton`) exporta la malla completa como un archivo PNG o JPG, incluyendo un pie de página con información de la carrera y tu estado de avance.
+
+## ✨ Extras
 
 * **Soporte Multi-Malla:** El proyecto está preparado para cargar distintas mallas curriculares a través de archivos JSON. El menú de navegación superior se rellena dinámicamente (`carreras.json`).
 * **Créditos USM/SCT:** Permite alternar la visualización del total de créditos entre el sistema de créditos local (USM en el código) y el Sistema de Créditos Transferibles (SCT).
 * **Persistencia:** La aplicación guarda el estado de aprobación/reprobación/pendiente en el almacenamiento local (localStorage) de tu navegador, permitiéndote cerrar y reabrir la aplicación sin perder tu progreso.
-* **Diseño Responsivo:** Utiliza Bootstrap 4 y soporta temas claros/oscuros (`prefers-color-scheme: dark`).## 🤝 Agradecimientos
+* **Diseño Responsivo:** Utiliza Bootstrap 4 y soporta temas claros/oscuros (`prefers-color-scheme: dark`).
+
+## 🤝 Agradecimientos
 
 Agradecimiento especial a la comunidad estudiantil por la inspiración y el apoyo continuo para desarrollar y mejorar herramientas útiles para la planificación académica.
-
-
-
-
-
-
-
