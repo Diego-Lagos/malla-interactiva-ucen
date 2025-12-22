@@ -81,11 +81,11 @@ Agrupa los ramos por semestre. Ejemplo de un ramo en el quinto semestre (`s5`):
 
 1. **Nombre**: Nombre completo del ramo.
 2. **Sigla**: Identificador único (formato `sigla-número`, sin espacios).
-3. **Créditos USM**: Cantidad entera de créditos locales.
-4. **Créditos SCT**: Cantidad entera. Si es `0`, se calcula según el crédito local.
+3. **Créditos T-E-L**: 
+4. **Créditos SCT**: Cantidad entera de creditos SCT de acuerdo a la resolucion de carrera.
 5. **Categoría**: Sigla que vincula con el archivo de colores (ej: `CI`).
 6. **Prerrequisitos**: Lista de siglas necesarias (deben existir previamente).
-7. **Dictación**: `"P"` (Par), `"I"` (Impar), `"A"` (Ambos) o `""` (Desconocido).
+7. **Dictación**: `"S"` (Semestral), `"A"` (Anual), `"X"` (Caso inexistente LEGACY) o `""` (Desconocido).
 
 ### 2. Definición de Colores (`colors_CARR.json`)
 
