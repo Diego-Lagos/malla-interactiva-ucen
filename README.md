@@ -1,85 +1,97 @@
 # 🗺️ Malla Interactiva
 
-Visualiza, planifica y gestiona tu avance en la malla curricular de tu carrera de una manera interactiva y amigable.
-
-## 📝 Introducción
-
-Este proyecto es una herramienta web sencilla diseñada para estudiantes que desean tener una **visualización interactiva** de su malla curricular. Permite a los usuarios marcar ramos como aprobados (✅ **Verde**), reprobados (❌ **Rojo**) o pendientes/en curso (⚠️ **Amarillo**), y ver instantáneamente cómo esto afecta a sus prerrequisitos y el total de créditos.
-
-Es especialmente útil para:
-
-* Planificar la toma de ramos para futuros semestres.
-* Conocer el porcentaje de avance de la carrera (créditos y asignaturas).
-* Visualizar fácilmente las dependencias (prerrequisitos y ramos que desbloquea) al pasar el ratón sobre una asignatura.
+Visualiza, planifica y gestiona tu avance en la malla curricular de tu carrera de una manera interactiva y amigable. Esta herramienta permite marcar ramos, calcular créditos y visualizar dependencias en tiempo real.
 
 > **⚠️ Aviso Importante:** Esta herramienta es **meramente ilustrativa**. Siempre debes usar la información oficial de tu universidad para la toma de ramos.
 
-## ⚙️ Como instalar y ejecutar
+---
 
-El proyecto está diseñado para funcionar como una aplicación web estática, por lo que su instalación y ejecución son muy sencillas, solo requiere un servidor web local (como Python).
+## 🚀 Características Principales
 
-### Requisitos
+* **Gestión de Estados:** Controla cada asignatura con un sistema de clics (Aprobado ✅, Reprobado ❌, En Curso ⚠️).
+* **Visualizador de Dependencias:** Al pasar el ratón, se destacan los **Prerrequisitos** (Rojo/Gris) y los ramos que se **desbloquean** (Verde brillante).
+* **Contador de Créditos:** Seguimiento de créditos aprobados y planificación de carga académica con un límite configurable de 30 créditos.
+* **Persistencia:** Los datos se guardan en el `localStorage` del navegador para no perder el progreso al cerrar la pestaña.
+* **Exportación:** Descarga tu estado en formato `.json` o exporta la malla completa como imagen (`.png`/`.jpg`).
 
-* Tener instalado [Python 3](https://www.python.org/downloads/).
+---
 
-### Pasos para la ejecución local
+## 📁 Estructura del Proyecto
 
-1.  **Descargar el Repositorio:** Clona o descarga este repositorio a tu máquina local.
-2.  **Abrir la Terminal:** Navega al directorio raíz del proyecto (donde se encuentran `index.html` y `min1.js`).
-3.  **Ejecutar el Servidor Web:** Inicia un servidor web local con Python:
+El proyecto se organiza de la siguiente manera para facilitar su mantenimiento:
 
-    ```bash
-    python -m http.server 8000
-    ```
-4.  **Abrir en el Navegador:** Abre tu navegador web y navega a la siguiente dirección:
+* **`/assets`**: Imágenes y recursos estáticos del HTML.
+* **`/css`**: Hojas de estilo y diseño responsivo.
+* **`/data`**: Archivos JSON por carrera (datos y colores).
+* **`/js`**: Scripts de lógica central y controladores.
+* **`/views`**: Fragmentos genéricos como footers y headers.
+* **`index.html`**: Punto de entrada de la aplicación.
+* **`serviceWorker.js`**: Archivo crítico para el funcionamiento de la aplicación.
+* **`RUN.BAT`**: Script de ejecución rápida para Windows.
 
-    ```
-    http://localhost:8000
-    ```
+---
 
-    *El archivo `RUN.BAT` incluido en el repositorio automatiza estos pasos para entornos Windows. Simplemente haz doble clic para iniciar el servidor y abrir el navegador (utiliza Microsoft Edge por defecto, aunque puede ser editado).*
+## 🛠️ Instalación y Ejecución
 
-## 💡 Funcionamiento
+La aplicación requiere un servidor web local para cargar correctamente los archivos JSON de las mallas.
 
-### Interacción Básica
+### Opción Rápida (Windows)
 
-La Malla Interactiva permite al usuario gestionar el estado de cada asignatura con un simple clic:
+Simplemente haz doble clic en el archivo **`RUN.BAT`**. Este iniciará un servidor local con Python y abrirá la aplicación en Microsoft Edge automáticamente.
 
-| Estado | Color | Acción | Descripción |
-| :--- | :--- | :--- | :--- |
-| **Sin Estado** | Color de Categoría | **Clic 1** | Estado inicial, prerrequisito no cumplido. |
-| **Aprobado** | ✅ Borde **Verde** | **Clic 2** | Cuenta para el total de créditos y desbloquea prerrequisitos. |
-| **Reprobado** | ❌ Borde **Rojo** | **Clic 3** | Asignatura reprobada, no cuenta como aprobada. |
-| **En Curso/Pendiente** | ⚠️ Borde **Amarillo** | **Clic 4** | Marca como planeada. Suma a un contador de créditos en curso. |
-| **Sin Estado** | Color de Categoría | **Clic 5** | Regresa al estado inicial. |
+### Opción Manual
 
-### Contador de Créditos en Curso (Amarillos)
+1. **Navega al directorio raíz** del proyecto.
+2. **Inicia el servidor web** con Python:
+```bash
+python -m http.server 8000
 
-* La aplicación incluye un contador de créditos seleccionados (los marcados en **Amarillo**).
-* Existe un límite estricto de **30 créditos** (valor configurable en `min1.js` con `this.MAX_SELECTED_CREDITS = 30;`).
-* Si se supera este límite, el contador se marca como **excedido** (`.limit-exceeded` en CSS) y se muestra una advertencia.
+```
 
-### Visualizador de Dependencias
 
-Al pasar el ratón sobre cualquier asignatura (ramo):
+3. **Abre en el navegador**: Accede a `http://localhost:8000`.
 
-* Los **Prerrequisitos** de esa asignatura se destacarán en **Rojo/Gris** (`.requires-ramo`).
-* Las asignaturas que esa asignatura **desbloquea** se destacarán en **Verde/Brillante** (`.opens-ramo`).
+---
 
-### Gestión de Estado
+## 💡 Configuración de Mallas
 
-* **Limpiar aprobados:** El botón "Limpiar aprobados" (`#cleanApprovedButton`) resetea el estado de **TODAS** las asignaturas (aprobadas, reprobadas y en curso) y el contador de créditos.
-* **Cargar Malla:** El botón "Cargar Malla" (`#loadfile`) permite cargar un archivo de estado o una nueva malla completa (`.json`).
-* **Descargar Estado:** El botón "Descargar Estado" (`#downloadStateButton`) guarda tu progreso actual (listas de aprobados, reprobados y en curso) en un archivo JSON para que puedas restaurarlo más tarde.
-* **Descargar Imagen:** El botón "Descargar Imagen" (`#downloadImageButton`) exporta la malla completa como un archivo PNG o JPG, incluyendo un pie de página con información de la carrera y tu estado de avance.
+Cada carrera requiere dos archivos en `/data`: `data_CARR.json` y `colors_CARR.json` (donde `CARR` es la abreviatura, ej: `INF`).
 
-## ✨ Extras
+### 1. Datos de Asignaturas (`data_CARR.json`)
 
-* **Soporte Multi-Malla:** El proyecto está preparado para cargar distintas mallas curriculares a través de archivos JSON. El menú de navegación superior se rellena dinámicamente (`carreras.json`).
-* **Créditos USM/SCT:** Permite alternar la visualización del total de créditos entre el sistema de créditos local (USM en el código) y el Sistema de Créditos Transferibles (SCT).
-* **Persistencia:** La aplicación guarda el estado de aprobación/reprobación/pendiente en el almacenamiento local (localStorage) de tu navegador, permitiéndote cerrar y reabrir la aplicación sin perder tu progreso.
-* **Diseño Responsivo:** Utiliza Bootstrap 4 y soporta temas claros/oscuros (`prefers-color-scheme: dark`).
+Agrupa los ramos por semestre. Ejemplo de un ramo en el quinto semestre (`s5`):
+
+```json
+"s5": [
+    ["ESTRUCTURA DE DATOS", "CI-3328", 12, 7, "CI", ["CI-3329"], "A"]
+]
+
+```
+
+**Orden de los parámetros:**
+
+1. **Nombre**: Nombre completo del ramo.
+2. **Sigla**: Identificador único (formato `sigla-número`, sin espacios).
+3. **Créditos USM**: Cantidad entera de créditos locales.
+4. **Créditos SCT**: Cantidad entera. Si es `0`, se calcula según el crédito local.
+5. **Categoría**: Sigla que vincula con el archivo de colores (ej: `CI`).
+6. **Prerrequisitos**: Lista de siglas necesarias (deben existir previamente).
+7. **Dictación**: `"P"` (Par), `"I"` (Impar), `"A"` (Ambos) o `""` (Desconocido).
+
+### 2. Definición de Colores (`colors_CARR.json`)
+
+Vincula las categorías con un color hexadecimal:
+
+```json
+{
+  "CI": ["#00838F", "Ciencias de la Informática"],
+  "PC": ["#4CAF50", "Plan Común"]
+}
+
+```
+
+---
 
 ## 🤝 Agradecimientos
 
-Agradecimiento especial a la comunidad estudiantil por la inspiración y el apoyo continuo para desarrollar y mejorar herramientas útiles para la planificación académica.
+Agradecimiento especial a la comunidad estudiantil por la inspiración y el apoyo continuo para mejorar herramientas de planificación académica.
