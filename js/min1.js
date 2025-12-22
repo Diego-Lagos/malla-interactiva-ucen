@@ -1,7 +1,3 @@
-! function() {
-    const t = window.location.hostname;
-    ["localhost", "booterman98.github.io"].includes(t) || (window.location.href = "https://booterman98.github.io/malla-interactiva/")
-}();
 let vh = .01 * window.innerHeight;
 
 function render(t) {
@@ -1084,4 +1080,5 @@ class Ramo {
         for (let t in s) s[t] <= .03928 ? s[t] /= 12.92 : s[t] = Math.pow((s[t] + .055) / 1.055, 2.4);
         return .2126 * s[0] + .7152 * s[1] + .0722 * s[2] <= .6
     }
+
 }
