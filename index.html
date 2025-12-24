@@ -30,7 +30,7 @@
   <meta property="og:url" content="https://127.0.0.1:8000/">
   <meta property="og:title" content="Malla interactiva">
   <meta property="og:description" content="Visualiza y planifica tu carrera en tu universidad">
-  <meta property="og:image" content="https://media.istockphoto.com/id/1166978137/photo/male-speaker-giving-presentation-in-hall-at-university-workshop.jpg?s=612x612&w=0&k=20&c=OC4wH_PMhXIurkHbBf1IDVD8s2TVct90HV17l6gnz_w=">
+  <meta property="og:image" content="https://booterman98.github.io/malla-interactiva/social-image.png">
 
   <meta property="twitter:card" content="summary_large_image">
 
@@ -97,9 +97,19 @@
       </header>
       <section class="landing-grid" data-career-list></section>
       <p class="landing-status" data-landing-status aria-live="polite">Cargando carreras...</p>
-      <footer class="landing-footer">Herramienta ilustrativa.</footer>
+      <footer class="landing-footer">
+  
+  <div style="font-size: 0.9rem; color: #333; max-width: 900px; margin: 20px auto; text-align: justify; line-height: 1.6; font-weight: 200;">
+    <p>Herramienta ilustrativa</p>
+    <p>A partir del segundo periodo académico de la carrera, los/as estudiantes deberán inscribir asignaturas de acuerdo al proceso fijado por la institución, en el periodo regular establecido en el Calendario Académico, para este proceso se deben considerar los requisitos determinados en el Plan de Estudios y no podrán tener solapes de horario. El/la estudiante debe inscribir obligatoriamente las asignaturas reprobadas y las de nivel más atrasado, si éstas se ofrecen, y a continuación, las asignaturas del Plan de Estudios que aún no hayan cursado, sin sobrepasar la carga académica máxima establecida en éste.</p>
+    
+    <p>Los/las estudiantes podrán inscribir asignaturas, a lo más, de tres niveles, según Plan de Estudios.</p>
+    
+    <p>Las/los estudiantes que se encuentren en calidad de madre, padre, tutor/a o curador/a legal, podrán inscribir asignaturas en forma prioritaria de acuerdo a lo establecido en el protocolo dispuesto para estos casos.</p>
+  </div>
+</footer>
       <div class="landing-resolution">
-        <a class="btn btn-primary landing-resolution-btn" href="https://www.ucentral.cl/" target="_blank" rel="noopener noreferrer">Ver resolucion</a>
+        <a class="btn btn-primary landing-resolution-btn" href="./assets/res__n__9842_reglamento_general_de_estudios.pdf" target="_blank" rel="noopener noreferrer">Ver resolución</a>
       </div>
     </div>
   </main>
@@ -187,6 +197,36 @@
     </section>
     <footer data-include="footer" class="container-fluid text-center mt-3">
     </footer>
+    <div class="help-widget" id="helpWidget">
+      <div class="help-panel" id="helpPanel" role="dialog" aria-labelledby="helpTitle" aria-describedby="helpDesc" hidden>
+        <div class="help-panel-header">
+          <h2 id="helpTitle">Como usar la malla</h2>
+          <button type="button" class="help-close" id="helpClose" aria-label="Cerrar">x</button>
+        </div>
+        <div class="help-panel-body" id="helpDesc">
+          <p><strong>Como leer un ramo</strong></p>
+          <ul>
+            <li>El color de fondo indica la categoria. Revisa la leyenda de colores del panel izquierdo.</li>
+            <li>Arriba izquierda va la sigla, al centro el nombre y abajo derecha los creditos.</li>
+            <li>El numero en el circulo identifica el ramo; los circulos inferiores son sus prerrequisitos.</li>
+            <li>Si faltan prerrequisitos, el ramo se ve con un velo claro.</li>
+            <li>Si aparece una letra P o I, indica semestre par o impar.</li>
+          </ul>
+          <p><strong>Como usar la malla</strong></p>
+          <ul>
+            <li>Haz clic para marcar un ramo como aprobado (se tacha). Haz clic otra vez para desmarcarlo.</li>
+            <li>Tu avance se guarda en este navegador. Usa "Limpiar aprobados" para reiniciar.</li>
+            <li>"Cargar Malla" permite abrir un plan desde un archivo JSON.</li>
+            <li>Puedes descargar el estado o una imagen con los botones de la izquierda.</li>
+            <li>Desliza horizontalmente para ver todos los semestres.</li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="help-button btn btn-primary" id="helpButton" aria-expanded="false" aria-controls="helpPanel">
+        <span class="help-button-icon" aria-hidden="true">?</span>
+        <span class="help-button-text">Ayuda</span>
+      </button>
+    </div>
   </div>
   
   <div class="d-none">
@@ -265,14 +305,6 @@
       <path d="M94 9.4h9m91 2.6h14m-17 75h17m-100 3H92" class="line" stroke="#000" />
     </svg>
   </div>
-
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  
-  <script src="https://kit.fontawesome.com/df883d94bd.js" crossorigin="anonymous"></script>
-  <script defer src="js/landing.js"></script>
   
   <script type="text/template" data-template="tab-template1">
     <li><a class="nav-item nav-link" href="?m=${Link}"><span class="d-md-none">Malla </span>${Nombre}</a></li>
@@ -281,81 +313,34 @@
     <a class="dropdown-item" href="?m=${Link}">Malla ${Nombre}</a>
   </script>
 
-  <script>
-    function initMallaOrLanding() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const mallaParam = urlParams.get('m');
-      const landing = document.getElementById('landing');
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/df883d94bd.js" crossorigin="anonymous"></script>
+<script src="js/min1.js" defer></script>
+<script src="js/landing.js" defer></script>
 
-      if (!mallaParam) {
-        document.body.classList.add('landing-mode');
-        if (landing) {
-          landing.removeAttribute('hidden');
-        }
-        return;
-      }
-
-      if (landing) {
-        landing.setAttribute('hidden', 'hidden');
-      }
-      document.body.classList.remove('landing-mode');
-
-      console.log('DOM loaded, initializing malla application...');
-
-      // Set up overlay removal
-      window.removePopUp = function() {
-        const overlay = document.getElementById('overlay');
-        const content = document.getElementById('content');
-        if (overlay) {
-          overlay.style.display = 'none';
-        }
-        if (content) {
-          content.classList.remove('blur');
-        }
-      };
-
-      // Set up credits system toggle
-      window.changeCreditsSystem = function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentValue = urlParams.get('SCT') || 'true';
-        const newValue = currentValue === 'true' ? 'false' : 'true';
-        urlParams.set('SCT', newValue);
-        window.location.search = urlParams.toString();
-      };
-
-      // Load min1.js dynamically
-      function loadMainScript() {
-        const script = document.createElement('script');
-        script.src = 'js/min1.js';
-        script.onload = function() {
-          console.log('min1.js loaded successfully');
-
-          // Auto-remove overlay after min1.js is loaded
-          setTimeout(() => {
-            if (typeof removePopUp === 'function') {
-              removePopUp();
-            }
-          }, 1000);
-        };
-
-        script.onerror = function() {
-          console.error('Failed to load min1.js');
-          document.getElementById('overlay-content').innerHTML =
-            '<h1>Error</h1><p>No se pudo cargar la aplicaci?n. Verifica que min1.js exista.</p>';
-        };
-
-        document.body.appendChild(script);
-      }
-
-      // Start loading the main script
-      loadMainScript();
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initMallaOrLanding);
+<script>
+  // Solo lógica de UI que no depende de la Malla
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (!urlParams.get('m')) {
+      document.getElementById('landing').removeAttribute('hidden');
+      document.body.classList.add('landing-mode');
     } else {
-      initMallaOrLanding();
+      setupHelpPanel();
     }
-  </script>
+  });
+
+  function setupHelpPanel() {
+    const btn = document.getElementById('helpButton');
+    const panel = document.getElementById('helpPanel');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const isHidden = panel.hasAttribute('hidden');
+      isHidden ? panel.removeAttribute('hidden') : panel.setAttribute('hidden', 'hidden');
+    });
+  }
+</script>
 </body>
 </html>
