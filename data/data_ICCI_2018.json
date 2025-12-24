@@ -9,9 +9,9 @@
     ],
     "s2": [
         ["ALGEBRA I", "CB-3225", 6, 6, "CB", ["CB-58000"], "A"],
-        ["CALCULO I", "CB-3226", 8, 6, "CB", [], "A"],
+        ["CALCULO I", "CB-3226", 8, 6, "CB", ["CB-58000"], "A"],
         ["MECANICA", "CB-14704", 12, 6, "CB", ["CB-14700"], "A"],
-        ["QUIMICA GENERAL", "CB-3267", 8, 6, "CB", [], "A"],
+        ["QUIMICA GENERAL", "CB-3267", 8, 6, "CB", ["CB-14700"], "A"],
         ["PROGRAMACION ORIENTADA A OBJETOS", "CI-19084", 8, 6, "CI", ["CI-14702"], "A"]
     ],
     "s3": [
@@ -19,8 +19,8 @@
         ["CALCULO II", "CB-3231", 10, 6, "CB", ["CB-3226"], "A"],
         ["ELECTRICIDAD Y MAGNETISMO", "CB-14703", 6, 6, "CB", ["CB-14704"], "A"],
         ["SISTEMAS DIGITALES", "CI-3335", 10, 6, "CI", ["CI-19076"], "A"],
-        ["INGLES PARA INGENIERIA I", "CSH-3330", 4, 3, "CSH", [], "A"],
-        ["ESTRATEGIAS DE COMUNICACION", "CSH-14701", 6, 3, "CSH", [], "A"]
+        ["INGLES PARA INGENIERIA I", "CSH-3330", 4, 3, "CSH", ["CI-19076"], "A"],
+        ["ESTRATEGIAS DE COMUNICACION", "CSH-14701", 6, 3, "CSH", ["CSH-58001"], "A"]
     ],
     "s4": [
         ["ECUACIONES DIFERENCIALES", "CB-3333", 6, 6, "CB", ["CB-3231"], "A"],
@@ -28,7 +28,7 @@
         ["ARQUITECTURA DE COMPUTADORES", "CI-3344", 6, 6, "CI", ["CI-3335"], "A"],
         ["FUNDAMENTOS DE LENGUAJES DE PROGRAMACION", "CI-3329", 4, 4, "CI", ["CI-19076"], "A"],
         ["INGLES PARA INGENIERIA II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], "A"],
-        ["CURSO TRANSVERSAL INSTITUCIONAL I", "CSH-50000", 2, 2, "CSH", [], "A"],
+        ["CURSO TRANSVERSAL INSTITUCIONAL I", "CSH-50000", 2, 2, "CSH", ["CSH-14701"], "A"],
         ["TALLER INTEGRADOR I", "CI-19085", 2, 3, "CI", [
             "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
             "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
@@ -84,7 +84,7 @@
             "CB-3248", "CI-3334", "CI-4835", "CI-3346", "CI-3328", "CSH-3349",
             "CB-3340", "CI-3341", "CI-19065", "CI-19017", "CI-3347"
         ], "A"],
-        ["CURSO TRANSVERSAL INSTITUCIONAL II", "CSH-50001", 2, 2, "CSH", [], "A"],
+        ["CURSO TRANSVERSAL INSTITUCIONAL II", "CSH-50001", 2, 2, "CSH", ["CSH-50000"], "A"],
         ["TALLER INTEGRADOR II", "CI-19080", 2, 3, "CI", [
             "CB-58000", "CB-14700", "CI-19076", "CI-14702", "CSH-58001", "CI-4827",
             "CB-3225", "CB-3226", "CB-14704", "CB-3267", "CI-19084",
