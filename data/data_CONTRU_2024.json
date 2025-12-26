@@ -36,7 +36,7 @@
     ["Interdisciplinar", "FG-INTR", 4, 4, "FG", [], ""]
   ],
   "s6": [
-    ["Probabilidad y Estadísticas", "FD-83515", 6, 5, "FD", [], ""],
+    ["Probabilidades y Estadística", "FD-83515", 6, 5, "FD", [], ""],
     ["Fundamento Estructural", "FD-84508", 6, 5, "FD", [], ""],
     ["Instalación BIM Proyectos Eléctricos y Clima", "FD-84509", 6, 5, "FD", ["FD-84507"], ""],
     ["Edificación BIM Construcción en Altura", "FD-84510", 8, 7, "FD", [], ""],
@@ -72,5 +72,4 @@
     ["Proyecto de Título II", "FP-84527", 2, 4, "FP", ["FP-83524"], ""],
     ["Práctica Profesional", "FP-84528", 2, 9, "FP", [], ""]
   ]
-
 }
