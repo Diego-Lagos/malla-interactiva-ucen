@@ -45,7 +45,7 @@
     ["Fundamentos de Economía", "CI-3334", 4, 4, "CI", ["CB-3225"], ""],
     ["Mecánica de Fluidos", "CI-3252", 6, 6, "CI", ["CB-3327", "CB-14704"], ""],
     ["Presupuestación y Procesos de Licitación", "IAP-19527", 4, 4, "IAP", ["CB-3340", "IAP-3246"], ""],
-    ["Inglés para Ingeniería I", "IAP-3330", 4, 3, "IAP", [], ""]
+    ["Inglés para Ingeniería I", "CSH-3330", 4, 3, "CSH", [], ""]
   ],
   "s7": [
     ["Mecánica de Suelos I", "CI-19528", 6, 6, "CI", ["CI-3247", "CI-3253"], ""],
@@ -80,7 +80,7 @@
     ["Estructuras de Madera", "IAP-19535", 4, 3, "IAP", ["CI-19506"], ""],
     ["Estructuras de Acero II", "IAP-19536", 4, 4, "IAP", [], ""],
     ["Taller de Ingeniería Vial", "IAP-19538", 4, 4, "IAP", ["IAP-3297"], ""],
-    ["Inglés para Ingeniería II", "IAP-3338", 4, 3, "IAP", ["IAP-3330"], ""]
+    ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""]
   ],
   "s11": [
     ["Taller de Hormigón Armado", "IAP-19539", 4, 6, "IAP", ["CI-19506"], ""],
@@ -91,3 +91,4 @@
     ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", [], ""]
   ]
 }
+
