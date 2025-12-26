@@ -124,8 +124,7 @@
             <svg class="py-3 py-md-5" style="min-height: 100px">
               <use href="#subjectExampleV9"></use>
             </svg>
-            <h5 style="max-width: 500px" class="mx-auto">Si alcanzas a leer este texto, seguramente la malla aún esta
-              cargando u ocurrió un problema y tienes que refrescar la página...</h5>
+            <h5 style="max-width: 500px" class="mx-auto">Cargando malla. Por favor espere un poco mas</h5>
           </div>
         </div>
       </div>
@@ -170,10 +169,10 @@
                 <div class="alert alert-warning" role="alert" style="margin-top: 20px; text-align: center; border-left: 5px solid #ffc107;">
                     <h4 class="alert-heading" style="color: #6d6e71;">⚠️ Aviso Importante sobre la Toma de Ramos ⚠️</h4>
                     <p style="font-weight: 500; font-size: 1.05em;">
-                      Esta herramienta es <strong>meramente ilustrativa</strong> y no reemplaza una toma de ramos oficial. 
-                      Al momento de tomar ramos, si se incluyen ramos que <strong>no correspondan de acuerdo a la resolucion de la carrera</strong>,
-                      estos <strong>serán eliminados.</strong>
-                      <strong>MENSAJE TEMPORAL ILUSTRATIVO</strong>
+
+                      Esta herramienta tiene un carácter <strong>exclusivamente referencial</strong> y no sustituye el proceso oficial de toma de ramos. 
+                      Al momento de la inscripción formal, <strong>toda asignatura que no se ajuste a lo establecido en la resolución vigente de la carrera</strong> será <strong>eliminada sin excepción</strong>.
+
                     </p>
                     <hr>
                     <p class="mb-0" style="font-size: 0.9em;">
@@ -200,34 +199,10 @@
     <footer data-include="footer" class="container-fluid text-center mt-3">
     </footer>
     <div class="help-widget" id="helpWidget">
-      <div class="help-panel" id="helpPanel" role="dialog" aria-labelledby="helpTitle" aria-describedby="helpDesc" hidden>
-        <div class="help-panel-header">
-          <h2 id="helpTitle">Como usar la malla</h2>
-          <button type="button" class="help-close" id="helpClose" aria-label="Cerrar">x</button>
-        </div>
-        <div class="help-panel-body" id="helpDesc">
-          <p><strong>Como leer un ramo</strong></p>
-          <ul>
-            <li>El color de fondo indica la categoria. Revisa la leyenda de colores del panel izquierdo.</li>
-            <li>Arriba izquierda va la sigla, al centro el nombre y abajo derecha los creditos.</li>
-            <li>El numero en el circulo identifica el ramo; los circulos inferiores son sus prerrequisitos.</li>
-            <li>Si faltan prerrequisitos, el ramo se ve con un velo claro.</li>
-            <li>Si aparece una letra P o I, indica semestre par o impar.</li>
-          </ul>
-          <p><strong>Como usar la malla</strong></p>
-          <ul>
-            <li>Haz clic para marcar un ramo como aprobado (se tacha). Haz clic otra vez para desmarcarlo.</li>
-            <li>Tu avance se guarda en este navegador. Usa "Limpiar aprobados" para reiniciar.</li>
-            <li>"Cargar Malla" permite abrir un plan desde un archivo JSON.</li>
-            <li>Puedes descargar el estado o una imagen con los botones de la izquierda.</li>
-            <li>Desliza horizontalmente para ver todos los semestres.</li>
-          </ul>
-        </div>
-      </div>
-      <button type="button" class="help-button btn btn-primary" id="helpButton" aria-expanded="false" aria-controls="helpPanel">
+      <a href="docs/ayuda.html" class="help-button btn btn-primary" id="helpButton">
         <span class="help-button-icon" aria-hidden="true">?</span>
         <span class="help-button-text">Ayuda</span>
-      </button>
+      </a>
     </div>
   </div>
   
@@ -276,35 +251,30 @@
         }
         ]]>
       </style>
-      <path fill="#2e58a7" d="M100 0h100v100H100z" />
+      <path fill="#FCC8AF" d="M100 0h100v100H100z" />
       <path d="M100 0h100v20H100zm0 80h100v20H100z" class="bars" fill="gray" />
       <circle cx="190" cy="10" r="8" fill="#fff" fill-rule="evenodd" />
-      <circle cy="90" cx="115" r="9" fill="#00838f" stroke="#fff" />
       <path d="M178 80h20v20h-20z" fill="#fff" /><text xml:space="preserve" x="200" y="10" writing-mode="lr-tb"
         direction="ltr" class="D E F">
         <tspan x="200" y="10" class="D">1</tspan>
       </text><text xml:space="preserve" x="198" y="90" class="D E F">
         <tspan id="creditsNumberExample" x="198" y="90" class="D">1</tspan>
-      </text><text xml:space="preserve" x="125" y="90" fill="#fff" text-anchor="middle" class="D E F">
-        <tspan x="125" y="90.391" class="D">0</tspan>
       </text><text xml:space="preserve" x="105" y="10" font-weight="bold" letter-spacing="0" fill="#fff" class="D E">
-        <tspan x="105" y="10" class="D">INF-101</tspan>
-      </text><text xml:space="preserve" x="150" y="40" fill="#fff" class="E F">
-        <tspan x="150" y="40" class="D">Introducción</tspan>
-        <tspan x="150" y="53.2" class="D">a la Malla</tspan>
-        <tspan x="150" y="66.4" class="D">Interactiva</tspan>
+        <tspan x="105" y="10" class="D">UCEN-10101</tspan>
+      </text><text xml:space="preserve" x="150" y="40" fill="#000" class="E F">
+        <tspan x="150" y="40" class="D">        Introducción</tspan>
+        <tspan x="150" y="53.2" class="D">        a la Malla</tspan>
+        <tspan x="150" y="66.4" class="D">      Interactiva</tspan>
       </text><text xml:space="preserve" x="92.465" y="11.742" text-anchor="end" class="E text">
-        <tspan x="92.465" y="11.742">Sigla</tspan>
+        <tspan x="92.465" y="11.742">Codigo</tspan>
         <tspan x="92.465" y="26.742">Asignatura</tspan>
       </text><text xml:space="preserve" x="209.197" y="16.86" class="E text">
         <tspan x="209.197" y="16.86">Número</tspan>
         <tspan x="209.197" y="31.86">asignatura</tspan>
       </text><text xml:space="preserve" x="209.326" y="89.117" class="E text">
         <tspan id="creditsExample" x="209.326" y="89.117">Créditos</tspan>
-      </text><text xml:space="preserve" x="47.622" y="93.323" class="E F text">
-        <tspan x="47.622" y="93.323">Prerrequisitos</tspan>
       </text>
-      <path d="M94 9.4h9m91 2.6h14m-17 75h17m-100 3H92" class="line" stroke="#000" />
+      <path d="M94 9.4h9m91 2.6h14m-17 75h17m-100 " class="line" stroke="#000" />
     </svg>
   </div>
   
@@ -328,20 +298,8 @@
     if (!urlParams.get('m')) {
       document.getElementById('landing').removeAttribute('hidden');
       document.body.classList.add('landing-mode');
-    } else {
-      setupHelpPanel();
     }
   });
-
-  function setupHelpPanel() {
-    const btn = document.getElementById('helpButton');
-    const panel = document.getElementById('helpPanel');
-    if (!btn) return;
-    btn.addEventListener('click', () => {
-      const isHidden = panel.hasAttribute('hidden');
-      isHidden ? panel.removeAttribute('hidden') : panel.setAttribute('hidden', 'hidden');
-    });
-  }
 </script>
 </body>
 </html>
