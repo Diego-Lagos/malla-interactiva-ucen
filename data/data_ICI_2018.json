@@ -45,7 +45,7 @@
     ["Termodinámica", "CI-58010", 6, 6, "CI", ["CB-14704"], ""],
     ["Sistemas de Información", "CI-4839", 6, 5, "CI", ["CI-4835"], ""],
     ["Macroeconomía", "IAP-4840", 4, 4, "IAP", ["CB-4833"], ""],
-    ["Trabajo en Equipo y Liderazgo", "IAP-4841", 4, 4, "IAP", ["IAP-4830"], ""]
+    ["Trabajo en Equipo y Liderazgo", "CSH-4841", 4, 4, "CSH", ["IAP-4830"], ""]
   ],
   "s7": [
     ["Simulación", "IAP-58011", 6, 6, "IAP", ["CI-58005"], ""],
@@ -59,10 +59,11 @@
     ["Tópicos de Ingeniería I", "IAP-58037", 4, 4, "IAP", [], ""],
     ["Dirección de Producción y Operaciones II", "IAP-58015", 8, 5, "IAP", ["IAP-58012"], ""],
     ["Operaciones Unitarias", "CI-58016", 6, 6, "CI", ["CI-3252"], ""],
-    ["Gestión de Recursos Humanos", "IAP-4848", 4, 5, "IAP", ["IAP-4841"], ""],
+    ["Gestión de Recursos Humanos", "IAP-4848", 4, 5, "IAP", ["CSH-4841"], ""],
     ["Gestión Organizacional", "IAP-4849", 4, 4, "IAP", ["IAP-4852"], ""],
     ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""],
-    ["Taller de Integración de Competencias Intermedias", "IAP-58017", 4, 3, "IAP", [], ""]
+    ["Taller de Integración de Competencias Intermedias", "IAP-58017", 4, 3, "IAP", [], ""],
+    ["Práctica Operacional", "IAP-4894", 0, 7, "IAP", [], ""]
   ],
   "s9": [
     ["Tópicos de Ingeniería II", "IAP-58038", 4, 4, "IAP", [], ""],
@@ -77,7 +78,8 @@
     ["Gestión de Sustentabilidad", "IAP-58023", 6, 7, "IAP", ["IAP-58021"], ""],
     ["Planificación Estratégica", "IAP-4856", 4, 6, "IAP", [], ""],
     ["Innovación y Emprendimiento", "CSH-4858", 4, 4, "CSH", [], ""],
-    ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", [], ""]
+    ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", [], ""],
+    ["Práctica Profesional", "IAP-4895", 0, 13, "IAP", [], ""]
   ],
   "s11": [
     ["Sistemas Integrados de Gestión", "IAP-58039", 8, 6, "IAP", ["IAP-58020"], ""],
