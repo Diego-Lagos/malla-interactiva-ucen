@@ -18,6 +18,10 @@ let prioritario = document.URL.includes("prioridad"),
 
 const sct = params.get("SCT") !== "false";
 
+// Sanitize sigla values for safe DOM ids.
+const domIdForSigla = (sigla) => String(sigla).replace(/[^A-Za-z0-9_-]/g, "_");
+const selectById = (id) => d3.select(document.getElementById(domIdForSigla(id)));
+
 // Función para limpiar el pop-up de carga
 function removePopUp() {
     d3.select("#overlay").transition().duration(500).style("opacity", 0).on("end", function() {
@@ -129,6 +133,8 @@ class Malla {
                 let ramoObj;
                 if (7 === t.length) {
                     ramoObj = new this.subjectType(t[0], t[1], t[2], t[4], t[5], this.SUBJECTID++, this, t[3], !1, t[6]);
+                } else if (6 === t.length) {
+                    ramoObj = new this.subjectType(t[0], t[1], t[2], t[4], t[5], this.SUBJECTID++, this, t[3], !1, "");
                 } else {
                     ramoObj = new this.subjectType(t[0], t[1], t[2], t[3], t.length > 4 ? t[4] : [], this.SUBJECTID++, this);
                 }
@@ -449,17 +455,17 @@ class Malla {
     }
     handleMouseOver(sigla) {
         if (!this.dependencyMap[sigla]) return;
-        this.dependencyMap[sigla].prer.forEach(p => { let svg = d3.select("#" + p); if (!svg.empty()) svg.classed("requires-ramo", true) });
-        this.dependencyMap[sigla].unlocks.forEach(u => { let svg = d3.select("#" + u); if (!svg.empty()) svg.classed("opens-ramo", true) });
+        this.dependencyMap[sigla].prer.forEach(p => { let svg = selectById(p); if (!svg.empty()) svg.classed("requires-ramo", true) });
+        this.dependencyMap[sigla].unlocks.forEach(u => { let svg = selectById(u); if (!svg.empty()) svg.classed("opens-ramo", true) });
     }
     handleMouseOut(sigla) {
         if (!this.dependencyMap[sigla]) return;
-        this.dependencyMap[sigla].prer.forEach(p => { let svg = d3.select("#" + p); if (!svg.empty()) svg.classed("requires-ramo", false) });
-        this.dependencyMap[sigla].unlocks.forEach(u => { let svg = d3.select("#" + u); if (!svg.empty()) svg.classed("opens-ramo", false) });
+        this.dependencyMap[sigla].prer.forEach(p => { let svg = selectById(p); if (!svg.empty()) svg.classed("requires-ramo", false) });
+        this.dependencyMap[sigla].unlocks.forEach(u => { let svg = selectById(u); if (!svg.empty()) svg.classed("opens-ramo", false) });
     }
     startVisualizerListeners() {
         Object.keys(this.dependencyMap).forEach(sigla => {
-            const svgGroup = d3.select("#" + sigla);
+            const svgGroup = selectById(sigla);
             if (!svgGroup.empty() && svgGroup.node()) {
                 const element = svgGroup.node();
                 element.addEventListener("mouseenter", () => this.handleMouseOver(sigla));
@@ -482,7 +488,7 @@ class Ramo {
     getUSMCredits() { return this.credits }
     getDisplayCredits() { return this.malla.sct ? this.getSCTCredits() : this.getUSMCredits() }
     draw(t, e, a, r, s) {
-        this.ramo = t.append("g").attr("cursor", "pointer").attr("role", "img").classed("subject", !0).attr("id", this.sigla);
+        this.ramo = t.append("g").attr("cursor", "pointer").attr("role", "img").classed("subject", !0).attr("id", domIdForSigla(this.sigla));
         let i = this.constructor.getDisplayWidth(r), l = this.constructor.getDisplayHeight(s), n = l / 5, o = this.getDisplayCredits(), c = this.malla.categories[this.category][0];
         this.ramo.append("title").text(this.name);
         this.ramo.append("rect").attr("x", e).attr("y", a).attr("width", i).attr("height", l).attr("fill", c);
@@ -521,36 +527,36 @@ class Ramo {
         this.malla.verifyPrer(), this.malla.updateStats(), this.malla.updateSelectedCreditsCounter(), this.malla.saveAllStates()
     }
     approveRamo() {
-        this.isCustom || d3.select("#" + this.sigla).select(".cross").attr("opacity", "1");
+        this.isCustom || selectById(this.sigla).select(".cross").attr("opacity", "1");
         if (!this.approved) { this.malla.approveSubject(this), this.approved = true }
     }
     deApproveRamo() {
         if (this.approved) {
-            this.isCustom || d3.select("#" + this.sigla).select(".cross").transition().attr("opacity", "0.01");
+            this.isCustom || selectById(this.sigla).select(".cross").transition().attr("opacity", "0.01");
             this.malla.deApproveSubject(this), this.approved = false;
         }
     }
     failRamo() {
         if (!this.failed) {
-            this.isCustom || d3.select("#" + this.sigla).select(".failed").attr("opacity", "1");
+            this.isCustom || selectById(this.sigla).select(".failed").attr("opacity", "1");
             this.malla.failSubject(this), this.failed = true;
         }
     }
     cleanFail() {
         if (this.failed) {
-            this.isCustom || d3.select("#" + this.sigla).select(".failed").transition().attr("opacity", "0.01");
+            this.isCustom || selectById(this.sigla).select(".failed").transition().attr("opacity", "0.01");
             this.malla.deFailSubject(this), this.failed = false;
         }
     }
     holdRamo() {
         if (!this.onHold) {
-            this.isCustom || d3.select("#" + this.sigla).select(".on-hold").attr("opacity", "1");
+            this.isCustom || selectById(this.sigla).select(".on-hold").attr("opacity", "1");
             this.malla.holdSubject(this), this.onHold = true;
         }
     }
     cleanHold() {
         if (this.onHold) {
-            this.isCustom || d3.select("#" + this.sigla).select(".on-hold").transition().attr("opacity", "0.01");
+            this.isCustom || selectById(this.sigla).select(".on-hold").transition().attr("opacity", "0.01");
             this.malla.deHoldSubject(this), this.onHold = false;
         }
     }
