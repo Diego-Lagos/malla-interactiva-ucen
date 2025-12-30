@@ -18,7 +18,7 @@
     ["Cálculo II", "FD-83506", 6, 5, "FD", ["FD-83503"], ""],
     ["Química General", "FD-83518", 8, 7, "FD", [], ""],
     ["Programación Computacional", "FD-86002", 6, 5, "FD", [], ""],
-    ["Curso Sello Institucional III", "FG-CSIRD", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional III", "CSIRD-01", 4, 4, "FG", [], ""],
     ["Administración", "FD-86003", 4, 4, "FD", [], ""]
   ],
   "s4": [
@@ -26,7 +26,7 @@
     ["Cálculo III", "FD-83509", 6, 5, "FD", ["FD-83506"], ""],
     ["Electricidad y Magnetismo", "FD-83510", 6, 5, "FD", ["FD-83504"], ""],
     ["Ciclo de Vida y Tecnología de los Materiales", "FD-86005", 6, 7, "FD", [], ""],
-    ["Curso Sello Institucional IV", "FG-CSIRD", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional IV", "CSIRD-02", 4, 4, "FG", [], ""],
     ["Taller Integrador de Competencias Básicas", "FD-86004", 2, 4, "FD", [], ""]
   ],
   "s5": [
@@ -82,3 +82,4 @@
     ["Práctica Profesional", "FP-86032-P", 2, 12, "FP", [], ""]
   ]
 }
+
