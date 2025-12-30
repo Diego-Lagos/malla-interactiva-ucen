@@ -19,7 +19,7 @@
     ["Química General", "FD-83518", 8, 7, "FD", [], ""],
     ["Mineralogía y Cristalografía", "FD-87001", 10, 5, "FD", ["FD-87000"], ""],
     ["Programación Computacional", "FD-87002", 6, 4, "FD", [], ""],
-    ["Curso Sello Institucional III", "FG-CSIRD", 4, 4, "FG", [], ""]
+    ["Curso Sello Institucional III", "CSIRD-01", 4, 4, "FG", [], ""]
   ],
   "s4": [
     ["Termodinámica", "FD-83520", 6, 4, "FD", ["FD-83506"], ""],
@@ -27,7 +27,7 @@
     ["Fundamentos de Petrología", "FD-87004", 8, 5, "FD", ["FD-87001"], ""],
     ["Estratigrafía y Sedimentación", "FD-87005", 12, 7, "FD", [], ""],
     ["Inglés para la Geología", "FG-87006", 4, 4, "FG", ["FG-82001"], ""],
-    ["Curso Sello Institucional IV", "FG-CSIRD", 4, 4, "FG", [], ""]
+    ["Curso Sello Institucional IV", "CSIRD-02", 4, 4, "FG", [], ""]
   ],
   "s5": [
     ["Sistemas de Información Geográfica y Procesamiento de Imágenes Satelitales", "FD-87007", 8, 6, "FD", [], ""],
@@ -73,3 +73,4 @@
     ["Práctica Profesional", "FP-87034", 2, 5, "FP", [], ""]
   ]
 }
+
