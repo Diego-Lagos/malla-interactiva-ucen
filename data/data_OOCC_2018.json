@@ -54,7 +54,7 @@
     ["Dinámica de Estructuras", "CI-19506", 6, 6, "CI", ["CI-19526_M"], ""],
     ["Contabilidad y Finanzas en Empresas Constructoras", "CI-19529", 4, 5, "CI", ["IAP-19527"], ""],
     ["Taller Building Information Modeling (BIM)", "IAP-19530", 4, 3, "IAP", ["IAP-3246", "CI-3253"], ""],
-    ["Práctica Operacional", "IAP-SC", 0, 9, "IAP", [], ""]
+    ["Práctica Operacional", "IAP-SC", 0, 9, "IAP", ["CB-58000", "CB-14700", "IAP-19500", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", "IAP-3246", "CI-3253", "IAP-19525", "CB-19526", "CB-3248", "CI-3288", "CI-16014", "CB-3340", "CSH-CTI2"], ""]
   ],
   "s8": [
     ["Hormigón Armado", "IAP-3304", 6, 5, "IAP", ["CI-19526_M"], ""],
@@ -76,7 +76,7 @@
   "s10": [
     ["Evaluación de Proyectos", "IAP-3300", 6, 5, "IAP", ["IAP-3856"], ""],
     ["Gestión de Calidad y Prevención de Riesgo", "IAP-3854", 4, 4, "IAP", ["CI-3334", "IAP-3246"], ""],
-    ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", [], ""],
+    ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", ["CB-58000", "CB-14700", "IAP-19500", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", "IAP-3246", "CI-3253", "IAP-19525", "CB-19526", "CB-3248", "CI-3288", "CI-16014", "CB-3340", "CSH-CTI2", "CI-19526_M", "IAP-19505", "CI-3334", "CI-3252", "IAP-19527", "CSH-3330", "CI-19528", "IAP-19508", "CI-16011", "CI-19506", "CI-19529", "IAP-19530", "IAP-SC", "IAP-3304", "CI-19544", "IAP-19532", "IAP-19516", "IAP-16018", "CI-19504", "IAP-19533"], ""],
     ["Estructuras de Madera", "IAP-19535", 4, 3, "IAP", ["CI-19506"], ""],
     ["Estructuras de Acero II", "IAP-19536", 4, 4, "IAP", [], ""],
     ["Taller de Ingeniería Vial", "IAP-19538", 4, 4, "IAP", ["IAP-3297"], ""],
@@ -85,10 +85,10 @@
   "s11": [
     ["Taller de Hormigón Armado", "IAP-19539", 4, 6, "IAP", ["CI-19506"], ""],
     ["Diseño de Obras Marítimas y Portuarias", "IAP-19540", 8, 4, "IAP", ["IAP-19538"], ""],
-    ["Proyecto de Título II", "IAP-19541", 2, 13, "IAP", [], ""],
+    ["Proyecto de Título II", "IAP-19541", 2, 13, "IAP", ["CB-58000", "CB-14700", "IAP-19500", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", "IAP-3246", "CI-3253", "IAP-19525", "CB-19526", "CB-3248", "CI-3288", "CI-16014", "CB-3340", "CSH-CTI2", "CI-19526_M", "IAP-19505", "CI-3334", "CI-3252", "IAP-19527", "CSH-3330", "CI-19528", "IAP-19508", "CI-16011", "CI-19506", "CI-19529", "IAP-19530", "IAP-SC", "IAP-3304", "CI-19544", "IAP-19532", "IAP-19516", "IAP-16018", "CI-19504", "IAP-19533", "IAP-3856", "IAP-3297", "IAP-19507", "IAP-19509", "IAP-19534", "IAP-19511", "IAP-3300", "IAP-3854", "IAP-19537", "IAP-19535", "IAP-19536", "IAP-19538", "CSH-3338"], ""],
     ["Gestión de Operaciones en Construcción", "IAP-19542", 6, 4, "IAP", ["IAP-19527", "IAP-3854"], ""],
     ["Gestión Legal y Ambiental", "IAP-19514", 4, 3, "IAP", ["CI-19529"], ""],
-    ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", [], ""]
+    ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", ["CB-58000", "CB-14700", "IAP-19500", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", "IAP-3246", "CI-3253", "IAP-19525", "CB-19526", "CB-3248", "CI-3288", "CI-16014", "CB-3340", "CSH-CTI2", "CI-19526_M", "IAP-19505", "CI-3334", "CI-3252", "IAP-19527", "CSH-3330", "CI-19528", "IAP-19508", "CI-16011", "CI-19506", "CI-19529", "IAP-19530", "IAP-SC", "IAP-3304", "CI-19544", "IAP-19532", "IAP-19516", "IAP-16018", "CI-19504", "IAP-19533", "IAP-3856", "IAP-3297", "IAP-19507", "IAP-19509", "IAP-19534", "IAP-19511"], ""]
   ]
 }
 
