@@ -64,8 +64,14 @@
     ["Diseño y Construcción en Madera y Acero", "IAP-16046", 4, 4, "IAP", ["CI-19528", "CI-3256"], ""],
     ["Construcción Sostenible", "IAP-16047", 4, 4, "IAP", ["IAP-16045"], ""],
     ["Tecnología del Asfalto", "CI-16004", 8, 4, "CI", ["CI-3247"], ""],
-    ["Taller de Integración Tecnologías Constructivas", "IAP-16048", 2, 4, "IAP", [], ""],
-    ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", [], ""]
+    ["Taller de Integración Tecnologías Constructivas", "IAP-16048", 2, 4, "IAP", [
+      "CB-58000", "CB-14700", "IAP-3242", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", 
+      "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", 
+      "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", 
+      "IAP-3246", "CB-3340", "IAP-19525", "CI-3334", "IAP-16008", "CI-3252", "CB-3248", 
+      "CI-3253", "CSH-CTI2", "CI-19528", "CI-3256", "IAP-16044", "IAP-16043", "CI-16011", 
+      "CSH-3330", "IAP-19531", "CI-19544", "IAP-3298", "CI-16014", "IAP-16045", "IAP-19527", 
+      "IAP-16009", "IAP-19530"], ""]
   ],
   "s9": [
     ["Planificación de Proyectos", "IAP-3856", 6, 5, "IAP", ["IAP-19527", "CI-19529"], ""],
@@ -74,7 +80,15 @@
     ["Diseño de Pavimentos", "IAP-3297", 4, 4, "IAP", ["IAP-16018"], ""],
     ["Gestión Legal y Ambiental", "IAP-19514", 4, 3, "IAP", ["CI-19529"], ""],
     ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", [], ""],
-    ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""]
+    ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""],
+    ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", [
+      "CB-58000", "CB-14700", "IAP-3242", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", 
+      "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", 
+      "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", 
+      "IAP-3246", "CB-3340", "IAP-19525", "CI-3334", "IAP-16008", "CI-3252", "CB-3248", 
+      "CI-3253", "CSH-CTI2", "CI-19528", "CI-3256", "IAP-16044", "IAP-16043", "CI-16011", 
+      "CSH-3330", "IAP-19531", "CI-19544", "IAP-3298", "CI-16014", "IAP-16045", "IAP-19527", 
+      "IAP-16009", "IAP-19530"], ""]
   ],
   "s10": [
     ["Evaluación de Proyectos", "IAP-3300", 6, 5, "IAP", ["IAP-3856"], ""],
@@ -84,4 +98,5 @@
     ["Proyecto de Título II", "IAP-19541", 2, 13, "IAP", ["IAP-19537"], ""]
   ]
 }
+
 
