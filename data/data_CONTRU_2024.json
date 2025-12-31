@@ -32,7 +32,7 @@
     ["Tecnología del Hormigón", "FD-83525", 6, 5, "FD", [], ""],
     ["Instalación BIM en Proyectos Sanitarios y Gas", "FD-84506", 6, 5, "FD", ["FD-84504"], ""],
     ["Edificación BIM Terminaciones", "FD-84507", 8, 5, "FD", ["FD-83511"], ""],
-    ["Capstone Project I", "FD-83526", 4, 5, "FD", [], ""],
+    ["Capstone Project I", "FD-83526", 4, 5, "FD", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4"], ""],
     ["Interdisciplinar", "FG-INTR", 4, 4, "FG", [], ""]
   ],
   "s6": [
@@ -49,27 +49,28 @@
     ["Contabilidad y Finanzas en Empresas Constructoras", "FD-84513", 4, 4, "FD", ["FD-84505"], ""],
     ["Edificación BIM en Proyectos Industriales y Comerciales", "FD-84514", 8, 5, "FD", ["FD-84510"], ""],
     ["Movimiento de Tierra y Fundaciones", "FD-84515", 4, 4, "FD", ["FD-84502"], ""],
-    ["Práctica Operacional", "FD-84516", 2, 9, "FD", [], ""]
+    ["Práctica Operacional", "FD-84516", 2, 9, "FD", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS"], ""],
   ],
   "s8": [
     ["Gestión y Coordinación de Proyectos", "FP-84517", 6, 6, "FP", ["FD-84513"], ""],
     ["Planificación de Proyectos", "FP-83522", 4, 5, "FP", [], ""],
     ["Innovación y Emprendimiento en Construcción", "FP-84518", 4, 7, "FP", [], ""],
     ["Tecnologías Avanzadas en Construcción", "FP-84519", 8, 6, "FP", [], ""],
-    ["Capstone Project II", "FP-84520", 4, 4, "FP", [], ""]
+    ["Capstone Project II", "FP-84520", 4, 4, "FP", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS", "FD-83513", "FD-84512", "FD-84513", "FD-84514", "FD-84515", "FD-84516"], ""]
   ],
   "s9": [
     ["Gestión de Calidad y Prevención de Riesgos", "FP-84521", 6, 6, "FP", [], ""],
     ["Sistemas Constructivos en Madera y Acero", "FP-84522", 6, 6, "FP", ["FD-84512"], ""],
     ["Proyectos Viales", "FP-84523", 6, 6, "FP", ["FD-84511"], ""],
     ["Construcción Sostenible", "FP-84524", 8, 6, "FP", [], ""],
-    ["Proyecto de Título I", "FP-83524", 4, 6, "FP", [], ""]
+    ["Proyecto de Título I", "FP-83524", 4, 6, "FP", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS", "FD-83513", "FD-84512", "FD-84513", "FD-84514", "FD-84515", "FD-84516", "FP-84517", "FP-83522", "FP-84518", "FP-84519", "FP-84520"], ""]
   ],
   "s10": [
     ["Evaluación de Proyectos", "FP-83517", 6, 5, "FP", ["FP-83522"], ""],
     ["Administración de Obras", "FP-84525", 8, 7, "FP", [], ""],
     ["Construcción de Obras Civiles", "FP-84526", 6, 5, "FP", ["FP-84523"], ""],
     ["Proyecto de Título II", "FP-84527", 2, 4, "FP", ["FP-83524"], ""],
-    ["Práctica Profesional", "FP-84528", 2, 9, "FP", [], ""]
+    ["Práctica Profesional", "FP-84528", 2, 9, "FP", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS", "FD-83513", "FD-84512", "FD-84513", "FD-84514", "FD-84515", "FD-84516", "FP-84517", "FP-83522", "FP-84518", "FP-84519", "FP-84520", "FP-84521", "FP-84522", "FP-84523", "FP-84524", "FP-83524"], ""]
   ]
 }
+
