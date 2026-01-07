@@ -44,6 +44,10 @@
     "Link": "OOCC_2018"
   },
   {
+    "Nombre": "Ingenieria Civil en Obras Civiles [OB08]",
+    "Link": "OOCC_2024"
+  },
+  {
     "Nombre": "Arquitectura [AR20]",
     "Link": "ARQ_2020"
   },
@@ -52,4 +56,5 @@
     "Link": "ARQ_2024"
   }
 ]
+
 
