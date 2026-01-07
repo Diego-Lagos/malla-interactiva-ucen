@@ -82,8 +82,8 @@ Agrupa los ramos por semestre. Ejemplo de un ramo en el quinto semestre (`s5`):
 
 1. **Nombre**: Nombre completo del ramo.
 2. **Sigla**: Identificador único (formato `sigla-número`, sin espacios).
-3. **Créditos USM**: Cantidad entera de créditos locales.
-4. **Créditos SCT**: Cantidad entera. Si es `0`, se calcula según el crédito local.
+3. **Créditos TEL**: Cantidad entera de créditos, se calcula segun la resolucion de carrera sumando los TEL.
+4. **Créditos SCT**: Cantidad entera, se obtiene directamente de la resolucion de carrera.
 5. **Categoría**: Sigla que vincula con el archivo de colores (ej: `CI`).
 6. **Prerrequisitos**: Lista de siglas necesarias (deben existir previamente).
 7. **Dictación**: `"P"` (Par), `"I"` (Impar), `"A"` (Ambos) o `""` (Desconocido).
